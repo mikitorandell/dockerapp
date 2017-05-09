@@ -9,6 +9,8 @@ dependencies:
     - sudo pip install docker-compose
 
 test:
+  branch: v0.6
+
   override:
     - docker-compose up -d
     - docker-compose run dockerapp python test.py
